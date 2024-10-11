@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix | Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--Black cover screen-->
+    <div class="w-[100%] h-[100vh] bg-[rgb(0,0,0)]">
+      <!--Header-->
+      <header class="max-w-[1170px] mx-auto">
+        <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px]">
+          <figure>
+            <img src="./images/netflex_logo.png" alt="" class="w-[200px]" />
+          </figure>
+        </div>
+      </header>
+
+      <!--End of header section-->
+
+      <!--Start Login content / Hero Section-->
+      <div
+        class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-white text-center"
+      >
+        <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px]">
+          <form class="grid grid-cols-1 gap-[20px]" action="">
+            <h1 class="sm:text-[50px] text-[30px] font-bold text-start">Sign In</h1>
+            <div class="relative">
+              <input
+                type="text"
+                id="email_number"
+                class="block px-2.5 py-5 w-full text-sm text-gray-400 bg-transparent rounded-lg border-[1px] border-red-300 focus:border-[3px] focus:ring-0 focus:border-[white] peer"
+                placeholder=""
+              />
+              <label
+                for="email_number"
+                class="absolute text-xl ml-[5px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                >Email or mobile number</label
+              >
+
+              <span></span>
+            </div>
+
+            <div class="relative">
+              <input
+                type="password"
+                id="password"
+                class="block px-2.5 py-5 w-full text-sm text-gray-400 bg-transparent rounded-lg border-[1px] border-red-300 focus:border-[3px] focus:ring-0 focus:border-[white] peer"
+                placeholder=""
+              />
+              <label
+                for="email_number"
+                class="absolute text-xl ml-[5px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                >Password</label
+              >
+
+              <span></span>
+            </div>
+            <button
+              class="text-xl bg-red-500 rounded-[5px] px-[10px] py-[10px] hover:bg-[rgb(193,17,25)] duration-300"
+            >
+              Sign In
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!--End Banner content / Hero Section-->
+    </div>
+  </body>
+</html>
