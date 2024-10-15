@@ -6,9 +6,11 @@
     <title>Netflix | Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!--Black cover screen-->
-    <div class="w-[100%] h-[100vh] bg-[rgb(0,0,0)]">
+  <body class="overflow-x-hidden">
+    <!--banner section login form-->
+    <section class="w-[100%] h-[100vh] bg-[url('images/netflix_banner.jpg')] bg-center bg-cover">
+       <!--Black cover screen-->
+    <div class="w-[100%] h-[100vh] sm:bg-[rgb(0,0,0,0.5)] bg-[rgb(0,0,0)]">
       <!--Header-->
       <header class="max-w-[1170px] mx-auto">
         <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px]">
@@ -21,12 +23,14 @@
       <!--End of header section-->
 
       <!--Start Login content / Hero Section-->
-      <div
-        class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-white text-center"
+      <div class="sm:w-[30%] w-[100%] h-[100vh] bg-[rgb(0,0,0,0.7)]  mx-auto sm:py-[30px] py-[10px]">
+
+        <div
+        class="max-w-[1170px] sm:mx-[35px] mx-[15px] text-white text-center"
       >
         <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px]">
           <form class="grid grid-cols-1 gap-[20px]" action="">
-            <h1 class="sm:text-[50px] text-[30px] font-bold text-start">Sign In</h1>
+            <h1 class="sm:text-[32px] text-[28px] font-bold text-start">Sign In</h1>
             <div class="relative">
               <input
                 type="text"
@@ -63,11 +67,58 @@
             >
               Sign In
             </button>
+            <p class="text-[#ccc]">OR</p>
+            <button class="text-xl bg-[rgb(105,105,105,0.5)] rounded-[5px] px-[10px] py-[10px] hover:bg-[rgb(105,105,105,0.3)] duration-300">Use a Sign-In Code</button>
+            <a href="" class="hover:text-[#ccc] hover:underline">Forgot password?</a>
+            <div class="relative text-left">
+              <input type="checkbox"> Remember me
+              <p><span class="text-[#ccc]">New to Netflix?</span><span class="font-bold"> Sign up now.</span></p>
+            </div>
+
+            <div class="text-left text-[#ccc]">
+              <p>This page is protected by Google reCAPTCHA to ensure you're no a bot.
+                <span class="relative text-[blue] hover:underline duration-300 cursor-pointer learnMore">Learn more</span>
+                <p class="scale-y-0 h-0 origin-top duration-300 overflow-hidden">
+                  The information collected by Google reCAPTCHA is subject to the
+                   Google <span class="text-[blue]">Privacy Policy</span> and <span class="text-[blue]">Terms of Service</span>, and is used for providing,
+                    maintaining, and improving the reCAPTCHA service and for general security 
+                    purposes (it is not used for personalized advertising by Google).
+                </p>
+              </p>
+              
+            </div>
+           
           </form>
         </div>
       </div>
 
+      </div>
+    
+
       <!--End Banner content / Hero Section-->
     </div>
+    </section>
+
+    <section>
+      <div class="w-[100%] bg-[black]"></div>
+    </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const learnMoreElements = document.querySelectorAll('.learnMore');
+        learnMoreElements.forEach((item) => {
+          item.addEventListener('click', () => {
+            const paragraph = item.nextElementSibling;
+            paragraph.classList.toggle('h-auto');
+            paragraph.classList.toggle('scale-y-0');
+            if (paragraph.classList.contains('scale-y-0')) {
+              paragraph.style.height = '0px';
+            } else {
+              paragraph.style.height = 'auto';
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
