@@ -10,8 +10,8 @@
     <!--banner section login form-->
     <section class="w-[100%] h-[100vh] bg-[url('images/netflix_banner.jpg')] bg-center bg-cover">
        <!--Black cover screen-->
-    <div class="w-[100%] h-[100vh] sm:bg-[rgb(0,0,0,0.5)] bg-[rgb(0,0,0)]">
-      <!--Header-->
+    <div class="w-[100%] h-[100vh] sm:bg-[rgb(0,0,0,0.5)] bg-[rgb(0,0,0)] mb-[30px]">
+      <!--Header--> 
       <header class="max-w-[1170px] mx-auto">
         <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px]">
           <figure>
@@ -23,24 +23,25 @@
       <!--End of header section-->
 
       <!--Start Login content / Hero Section-->
-      <div class="sm:w-[30%] w-[100%] h-[100vh] bg-[rgb(0,0,0,0.7)]  mx-auto sm:py-[30px] py-[10px]">
+      <div class="sm:w-[30%] w-[100%] h-[100vh] bg-[rgb(0,0,0,0.7)] mx-auto sm:py-[40px] py-[10px] sm:mb-[30px]">
 
         <div
         class="max-w-[1170px] sm:mx-[35px] mx-[15px] text-white text-center"
       >
-        <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px]">
+        <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto ">
           <form class="grid grid-cols-1 gap-[20px]" action="">
-            <h1 class="sm:text-[32px] text-[28px] font-bold text-start">Sign In</h1>
+            <h1 class="sm:text-[32px] text-[28px] font-bold text-start mb-[10px]">Sign In</h1>
+
             <div class="relative">
               <input
                 type="text"
                 id="email_number"
-                class="block px-2.5 py-5 w-full text-sm text-gray-400 bg-transparent rounded-lg border-[1px] border-red-300 focus:border-[3px] focus:ring-0 focus:border-[white] peer"
+                class="block px-2.5 py-3.5 w-full text-sm text-white bg-transparent rounded-lg border-[1px] border-red-300 focus:border-[3px] focus:ring-0 focus:border-[white] peer"
                 placeholder=""
               />
               <label
                 for="email_number"
-                class="absolute text-xl ml-[5px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                class="absolute text-[16px] ml-[5px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
                 >Email or mobile number</label
               >
 
@@ -51,31 +52,31 @@
               <input
                 type="password"
                 id="password"
-                class="block px-2.5 py-5 w-full text-sm text-gray-400 bg-transparent rounded-lg border-[1px] border-red-300 focus:border-[3px] focus:ring-0 focus:border-[white] peer"
+                class="block px-2.5 py-3.5 w-full text-sm text-white bg-transparent rounded-lg border-[1px] border-red-300 focus:border-[3px] focus:ring-0 focus:border-[white] peer"
                 placeholder=""
               />
               <label
                 for="email_number"
-                class="absolute text-xl ml-[5px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                class="absolute text-[16px] ml-[5px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-gray-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-2 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
                 >Password</label
               >
 
               <span></span>
             </div>
             <button
-              class="text-xl bg-red-500 rounded-[5px] px-[10px] py-[10px] hover:bg-[rgb(193,17,25)] duration-300"
+              class="text-[16px] font-medium bg-red-500 rounded-[5px] px-[10px] py-[7px] hover:bg-[rgb(193,17,25)] duration-300"
             >
               Sign In
             </button>
             <p class="text-[#ccc]">OR</p>
-            <button class="text-xl bg-[rgb(105,105,105,0.5)] rounded-[5px] px-[10px] py-[10px] hover:bg-[rgb(105,105,105,0.3)] duration-300">Use a Sign-In Code</button>
+            <button class="text-[16px] font-medium bg-[rgb(105,105,105,0.5)] rounded-[5px] px-[10px] py-[7px] hover:bg-[rgb(105,105,105,0.3)] duration-300">Use a Sign-In Code</button>
             <a href="" class="hover:text-[#ccc] hover:underline">Forgot password?</a>
             <div class="relative text-left">
-              <input type="checkbox"> Remember me
-              <p><span class="text-[#ccc]">New to Netflix?</span><span class="font-bold"> Sign up now.</span></p>
+              <input type="checkbox" class="h-5 w-5 relative"><span class="absolute ml-[15px] items-center">Remember me</span>
+              <p class="mt-[10px]"><span class="text-[#ccc]">New to Netflix?</span><span class="font-bold"> Sign up now.</span></p>
             </div>
 
-            <div class="text-left text-[#ccc]">
+            <div class="text-left text-[#ccc] text-[13px] mb-[30px]">
               <p>This page is protected by Google reCAPTCHA to ensure you're no a bot.
                 <span class="relative text-[blue] hover:underline duration-300 cursor-pointer learnMore">Learn more</span>
                 <p class="scale-y-0 h-0 origin-top duration-300 overflow-hidden">
@@ -99,26 +100,50 @@
     </div>
     </section>
 
-    <section>
-      <div class="w-[100%] bg-[black]"></div>
-    </section>
+  <!--footer section start-->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const learnMoreElements = document.querySelectorAll('.learnMore');
-        learnMoreElements.forEach((item) => {
-          item.addEventListener('click', () => {
-            const paragraph = item.nextElementSibling;
-            paragraph.classList.toggle('h-auto');
-            paragraph.classList.toggle('scale-y-0');
-            if (paragraph.classList.contains('scale-y-0')) {
-              paragraph.style.height = '0px';
-            } else {
-              paragraph.style.height = 'auto';
-            }
-          });
-        });
-      });
-    </script>
+  <footer class="w-[100%] bg-black sm:py-[90px] py-[50px]">
+    <div class="max-w-[1170px] mx-auto px-[15px]">
+      <h3 class="text-[#ccc] text-[18px]">Questions? Contact Us</h3>
+      <div class="py-[30px] grid sm:grid-cols-2 grid-cols-1">
+        <div>
+          <ul class="text-[#ccc]">
+            <li class="mb-[10px]"><a href="#" class="underline">FAQ</a></li>
+            <li class="mb-[10px]"><a href="#" class="underline">Terms of Use</a></li>
+            <li class="mb-[10px]"><a href="#" class="underline">Cookie Preferences</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="text-[#ccc]">
+            <li class="mb-[10px]"><a href="#" class="underline">Help Center</a></li>
+            <li class="mb-[10px]"><a href="#" class="underline">Privacy</a></li>
+            <li class="mb-[10px]"><a href="#" class="underline">Corporate Information</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative mb-[10px]">
+        <img
+          src="./images/globe_icon.png"
+          alt="globe_icon"
+          class="w-5 h-5 absolute top-[7px] left-[5px]"
+        />
+
+        <select
+          name=""
+          id=""
+          class="bg-[black] text-white border-[1px] border-[white] sm:p-[5px_25px] p-[7px_20px] rounded-[5px]"
+        >
+          <option value="">English</option>
+          <option value="">Nepali</option>
+        </select>
+      </div>
+
+    </div>
+  </footer>
+
+  <!--End of footer section-->
+
+    
   </body>
 </html>
